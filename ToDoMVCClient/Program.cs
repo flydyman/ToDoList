@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using ToDoItems;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// DB context
+builder.Services.AddDbContext<ToDoContext>(options => options.UseSqlite("Data Source=tests.sqlite"));
 
 var app = builder.Build();
 

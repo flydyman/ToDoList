@@ -31,6 +31,6 @@ public class ToDoItem
     [ForeignKey("ToDoSubProjectId")]
     public ToDoSubProject? ToDoSubProject { get; set; }
 
-    [InverseProperty("ItemId")]
+    [InverseProperty("CommentedItem")]
     public List<ToDoComment> ToDoComments { get; set; } = new();
 }

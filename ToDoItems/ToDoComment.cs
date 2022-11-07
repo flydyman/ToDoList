@@ -13,12 +13,10 @@ public class ToDoComment
     public bool IsDeleted { get; set; } = false;
     
     public int CreatorId { get; set; }
-    [Required]
     [ForeignKey("CreatorId")]
     public User Creator { get; set; }
     
     public int ItemId { get; set; }
-    [Required]
     [ForeignKey("ItemId")]
     public ToDoItem CommentedItem { get; set; }
 }

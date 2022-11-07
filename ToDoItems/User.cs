@@ -21,26 +21,26 @@ public class User
     public UserGroup? UserGroup { get; set; }
 
     // ToDoItem
-    [InverseProperty("AssignedId")]
+    [InverseProperty("Assigned")]
     public List<ToDoItem> ToDoItemsAssigned { get; set; } = new();
-    [InverseProperty("CreatorId")]
+    [InverseProperty("Creator")]
     public List<ToDoItem> ToDoItemsCreated { get; set; } = new();
     
     // ToDoProject
-    [InverseProperty("CreatorId")]
+    [InverseProperty("Creator")]
     public List<ToDoProject> ToDoProjectsAsCreator { get; set; } = new();
-    [InverseProperty("MaintainerId")]
+    [InverseProperty("Maintainer")]
     public List<ToDoProject> ToDoProjectMaintainer { get; set; } = new();
     
     // ToDoSubProject
-    [InverseProperty("CreatorId")]
+    [InverseProperty("Creator")]
     public List<ToDoSubProject> ToDoSubProjectsAsCreator { get; set; } = new();
-    [InverseProperty("MaintainerId")]
+    [InverseProperty("Maintainer")]
     public List<ToDoSubProject> ToDoSubProjectMaintainer { get; set; } = new();
 
-    [InverseProperty("CreatorId")]
+    [InverseProperty("Creator")]
     public List<ToDoComment> ToDoComments { get; set; } = new();
 
-    [InverseProperty("UserId")]
+    [InverseProperty("User")]
     public List<UserToken> UserTokens { get; set; } = new();
 }

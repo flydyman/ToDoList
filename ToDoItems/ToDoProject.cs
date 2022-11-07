@@ -29,5 +29,6 @@ public class ToDoProject
     [ForeignKey("MaintainerId")]
     public User? Maintainer { get; set; }
 
+    [InverseProperty("ToDoProject")]
     public List<ToDoSubProject> ToDoSubProjects { get; set; } = new();
 }

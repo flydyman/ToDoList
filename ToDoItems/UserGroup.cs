@@ -11,5 +11,6 @@ public class UserGroup
     [Required]
     public string? Title { get; set; }
 
+    [InverseProperty("UserGroup")]
     public List<User> Users { get; set; } = new();
 }
