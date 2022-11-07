@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoItems", "ToDoItems\ToDo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAccess", "BaseAccess\BaseAccess.csproj", "{EA6CFB25-66C7-4115-A70F-894CF37A4893}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoMVCClient", "ToDoMVCClient\ToDoMVCClient.csproj", "{2DEE7B28-F0C8-4212-9E2C-9C40D839E371}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{EA6CFB25-66C7-4115-A70F-894CF37A4893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA6CFB25-66C7-4115-A70F-894CF37A4893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA6CFB25-66C7-4115-A70F-894CF37A4893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DEE7B28-F0C8-4212-9E2C-9C40D839E371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DEE7B28-F0C8-4212-9E2C-9C40D839E371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DEE7B28-F0C8-4212-9E2C-9C40D839E371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DEE7B28-F0C8-4212-9E2C-9C40D839E371}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
